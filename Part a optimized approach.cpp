@@ -1,10 +1,10 @@
 #include <iostream>
 #include <unordered_set>
 #include <string>
-#include <algorithm> // Added for all_of
+#include <algorithm> 
 
 using namespace std;
-
+// It is the set of most common PIN used by the user it had been taken by the research from various sources
 unordered_set<string> commonPins = {
     "1234", "1111", "0000", "1212", "7777", "1004",
     "2000", "4444", "2222", "6969", "9999", "3333",
@@ -25,10 +25,11 @@ int main() {
 
     // Check if PIN is common
     if (commonPins.count(pin)) {
-        cout << "The PIN’s too common." << endl;
+        cout << "The PIN is too common." << endl;
     } else {
-        cout << "I is not  a common  PIN." << endl;
+        cout << "It is not a common PIN." << endl;
     }
 
     return 0;
 }
+
