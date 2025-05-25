@@ -10,7 +10,7 @@ const string commonPins[ ] = {
     "2000", "4444", "2222", "6969", "9999", "3333",
     "2001", "1010"
 }
-const int pinCount = sizeof(commonPins) / sizeof(commonPins[0]);
+const int pinCount = sizeof(commonPins) / sizeof(commonPins[0])
 
 bool isCommonPIN(const string& pin) {
     for (int i = 0; i < pinCount; ++i) {
